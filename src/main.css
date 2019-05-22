@@ -1,0 +1,27 @@
+body {
+    background-color: mediumspringgreen;
+    align-content: center;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: monospace;
+    width: 960px;
+    margin: auto;
+}
+
+header {
+    background-color: mediumpurple;
+    padding: 10px;
+}
+
+main {
+    padding: 10px;
+}
+
+footer {
+    background-color: mediumpurple;
+    padding: 5px;
+}
+
+#todo-list {
+    list-style: none;
+}
