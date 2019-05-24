@@ -1,8 +1,8 @@
-import filterFunction from '../src/filter-function.js';
+
 
 const test = QUnit.test;
 
-QUnit.module('Filter function todo');
+QUnit.module('radio button filter test');
 const todoList = [
     {
         task: 'Smash the Patriarchy',
@@ -19,7 +19,7 @@ const todoList = [
 ];
 
 
-test('text filter test', assert => {
+test('radio filter test', assert => {
     //Arrange
     const filterParam = {
         text: 'peo'
@@ -33,7 +33,7 @@ test('text filter test', assert => {
     ];
 
     //Act
-    const filteredData = filterFunction(todoList, filterParam);
+    const filteredData = radioFiltFunc(todoList, filterParam);
    
     //Assert
     assert.deepEqual(filteredData, expected);
