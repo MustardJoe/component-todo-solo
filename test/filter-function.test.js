@@ -3,8 +3,14 @@ const test = QUnit.test;
 
 QUnit.module('Filter function todo');
 
-function filterFunction(todos, filter) {
+function filterFunction(todoList, filterParam) {
+    const lowerCaseFilter = filterParam.text.toLowerCase();
+    return todoList.filter(todo => {
+        const tasktext = todo.task.includes(lowerCaseFilter);
+        console.log(filterParam);
 
+        return tasktext;
+    });    //(todoList, filterParam));
 };
 
 
@@ -26,7 +32,7 @@ const todoList = [
 
 test('text filter test', assert => {
     //Arrange
-    const filter = {
+    const filterParam = {
         text: 'peo'
     };
 
@@ -38,7 +44,7 @@ test('text filter test', assert => {
     ];
 
     //Act
-    const filteredData = filterFunction(todoList, filter);
+    const filteredData = filterFunction(todoList, filterParam);
    
     //Assert
     assert.deepEqual(filteredData, expected);
