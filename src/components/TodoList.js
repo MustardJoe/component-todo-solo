@@ -5,7 +5,6 @@ class TodoList extends Component {
 
     render() {
         const list = this.renderDOM();
-        console.log('here', this);
         const todos = this.props.todos;
  
 

@@ -7,19 +7,19 @@ QUnit.module('Todo Item test');
 
 test('template', assert => {
     //Arrange
-    const todoItem = {
+    const todo = {
         task: 'Buy people food',
         completed: false,
     };
 
     const expected = /*html*/`
         <li>
-        <input type="checkbox" name="test" value="">${todoItem.task}
+        <input type="checkbox" name="test" value="">${todo.task}
         </li>  
     `;
 
     //Act
-    const todoTestItem = new TodoItem({ todoItem });
+    const todoTestItem = new TodoItem({ todo });
     const html = todoTestItem.renderTemplate();
 
     //Assert

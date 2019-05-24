@@ -14,7 +14,7 @@ class TodoItem extends Component {
         //needs to reference the name of the thing I pass into the object
         //during instantiation
         
-        console.log('here i am', todo);
+        // console.log('here i am', todo);
 
         
         if(todo.completed) {
