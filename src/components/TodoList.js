@@ -20,7 +20,7 @@ class TodoList extends Component {
 
     renderTemplate() {
         return /*html*/`
-            <ul id="todos"></ul>
+            <ul class="todos"></ul>
        `;
     } 
 }

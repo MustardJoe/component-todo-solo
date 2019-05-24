@@ -22,7 +22,7 @@ const todoList = [
 test('radio filter test', assert => {
     //Arrange
     const filterParam = {
-        text: 'peo'
+        // text: 'peo'
     };
 
     const expected = [

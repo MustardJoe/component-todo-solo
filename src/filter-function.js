@@ -3,7 +3,8 @@ function filterFunction(todoList, filterParam) {
     const lowerCaseFilter = filterParam.text.toLowerCase();
 
     return todoList.filter(todo => {
-        const tasktext = todo.task.includes(lowerCaseFilter);
+        const lowerCaseTaskList = todo.task.toLowerCase();
+        const tasktext = lowerCaseTaskList.includes(lowerCaseFilter);
         return tasktext;
     });
 }
