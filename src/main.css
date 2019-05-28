@@ -19,9 +19,15 @@ main {
 
 footer {
     background-color: mediumpurple;
-    padding: 5px;
+    padding: 8px;
 }
 
-#todo-list {
+.add-todo {
+    margin: 12px;
+
+}
+
+.todos {
     list-style: none;
 }
+
